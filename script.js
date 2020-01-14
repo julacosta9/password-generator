@@ -102,7 +102,8 @@ pwLengthSlider.style.background = color;
 generateBtn.addEventListener("click", generatePassword);
 copyBtn.addEventListener("click", copyToClipboard);
 
-pwLengthSlider.addEventListener("mousemove", function() {
+// Desktop
+pwLengthSlider.addEventListener("mousemove", function() { 
 	x = (pwLengthSlider.value / 128) * 100
 	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
 		'%, #ffffff ' + x + '%)';
@@ -113,5 +114,23 @@ pwLengthSlider.addEventListener("click", function() {
 	x = (pwLengthSlider.value / 128) * 100;
 	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
 		'%, #ffffff ' + x + '%)';
-	pwLengthSlider.style.background = color;
+    pwLengthSlider.style.background = color;
+    console.log("click")
+});
+
+// Mobile
+pwLengthSlider.addEventListener("touchmove", function() {
+	x = (pwLengthSlider.value / 128) * 100;
+	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
+		'%, #ffffff ' + x + '%)';
+    pwLengthSlider.style.background = color;
+    console.log("touchmove")
+});
+
+pwLengthSlider.addEventListener("touchend", function() {
+	x = (pwLengthSlider.value / 128) * 100;
+	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
+		'%, #ffffff ' + x + '%)';
+    pwLengthSlider.style.background = color;
+    console.log("touchend")
 });
