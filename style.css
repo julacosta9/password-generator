@@ -1,0 +1,85 @@
+body {
+	background: #232323;
+	font-family: 'Public Sans', sans-serif;
+}
+
+#wrapper {
+	background: #f5f5f5;
+	border-radius: 10px;
+	margin-top: 30px;
+	/* padding: 20px; */
+	width: 60%;
+	min-width: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#header {
+	font-family: 'Bowlby One SC', sans-serif;
+	background: linear-gradient(90deg, #FC5C7D, #6A82FB);
+	border-radius: 10px 10px 0 0;
+	padding: 20px 0;
+	color: #ffffff
+}
+
+#headerText {
+	font-size: calc(16px + 3vw);
+	letter-spacing: 4px;
+}
+
+#generate {
+	background-color: #6A82FB;
+	color: #ffffff;
+}
+
+#passwordContainer {
+	width: 80%;
+	min-width: 280px;
+	border: none;
+	overflow-wrap: break-word;
+	font-family: 'VT323', monospace;
+}
+
+#password {
+	font-size: calc(16px + 3vw);
+}
+
+/*
+Password Length Slider CSS
+Utilized code from Philipp Rohe - https://codepen.io/BananaCoding/pen/LKLdNJ
+*/
+
+.slider {
+	-webkit-appearance: none;
+	width: 50%;
+	min-width: 160px;
+	height: 20px;
+	background: linear-gradient(90deg, #FC5C7D 0%, #6A82FB 5%, #ffffff 5%);
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	border-radius: 12px;
+	box-shadow: 0 1px 10px #868686;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 40px;
+	height: 40px;
+	background: white;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+	width: 40px;
+	height: 40px;
+	background: white;
+	cursor: pointer;
+	border-radius: 50%;
+}

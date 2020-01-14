@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Password Generator</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Public+Sans|VT323&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div class="container" id="wrapper">
+		<div class="row mb-4" id="header">
+			<div class="col text-center">
+				<h1 id="headerText">Password Generator</h1>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col text-center">
+				<div class="slideContainer pt-3 mx-auto">
+					<input type="range" min="8" max="128" value="12" class="slider" id="pw-length">
+					<p class="mt-2 mx-auto">Password Length: <span id="value"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row pb-3">
+			<div class="col text-center">
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					<label class="form-check-label" for="inlineCheckbox1">Uppercase</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+					<label class="form-check-label" for="inlineCheckbox2">Lowercase</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+					<label class="form-check-label" for="inlineCheckbox3">Numbers</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+					<label class="form-check-label" for="inlineCheckbox4">Symbols</label>
+				</div>
+			</div>
+		</div>
+		<div class="row pb-3">
+			<div class="col-6 text-center">
+				<button class="btn btn-lg mx-auto float-right" id="generate">Generate Password</button>
+			</div>
+			<div class="col-6 text-center">
+				<button class="btn btn-secondary btn-lg mx-auto float-left" id="copy">
+					Copy to Clipboard
+				</button>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col">
+				<div class="mx-auto" id="passwordContainer" aria-label="Generated Password">
+					<p id="password">Your Secure Password</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
