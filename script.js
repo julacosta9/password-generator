@@ -103,14 +103,14 @@ copyBtn.addEventListener("click", copyToClipboard);
 
 // Desktop
 pwLengthSlider.addEventListener("mousemove", function() { 
-	x = (pwLengthSlider.value / 128) * 100
+	x = ((pwLengthSlider.value / 128) * 100) - 5; // Subtract 5 to ensure the fill color doesn't visually move to the right of the slider thumb
 	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
 		'%, #ffffff ' + x + '%)';
 	pwLengthSlider.style.background = color;
 });
 
 pwLengthSlider.addEventListener("click", function() {
-	x = (pwLengthSlider.value / 128) * 100;
+	x = ((pwLengthSlider.value / 128) * 100) - 5;
 	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
 		'%, #ffffff ' + x + '%)';
     pwLengthSlider.style.background = color;
@@ -118,14 +118,14 @@ pwLengthSlider.addEventListener("click", function() {
 
 // Mobile
 pwLengthSlider.addEventListener("touchmove", function() {
-	x = (pwLengthSlider.value / 128) * 100;
+	x = ((pwLengthSlider.value / 128) * 100) - 5;
 	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
 		'%, #ffffff ' + x + '%)';
     pwLengthSlider.style.background = color;
 });
 
 pwLengthSlider.addEventListener("touchend", function() {
-	x = (pwLengthSlider.value / 128) * 100;
+	x = ((pwLengthSlider.value / 128) * 100) - 5;
 	color = 'linear-gradient(90deg, #FC5C7D 0%, #6A82FB ' + x +
 		'%, #ffffff ' + x + '%)';
     pwLengthSlider.style.background = color;
