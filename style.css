@@ -87,3 +87,7 @@ Utilized code from Philipp Rohe - https://codepen.io/BananaCoding/pen/LKLdNJ
 	cursor: pointer;
 	border-radius: 50%;
 }
+
+.slider::-moz-focus-outer {
+	border: 0;
+}
