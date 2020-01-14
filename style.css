@@ -27,8 +27,12 @@ body {
 }
 
 #generate {
-	background-color: #6A82FB;
+	background: #6A82FB;
 	color: #ffffff;
+}
+
+#generate:hover {
+	background: #637aeb;
 }
 
 #passwordContainer {
