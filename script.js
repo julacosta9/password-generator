@@ -49,13 +49,12 @@ function generatePassword() {
 			parameterArray = parameterArray.concat(numbers);
 		}
 
-		if (symbolsCheckbox.checked) {
+		if (symbolsCheckbox.checked) { 
 			parameterArray = parameterArray.concat(symbols);
 		}
 
 		for (let i = 0; i < pwLengthSlider.value; i++) {
-			let randomNumber = Math.floor(Math.random() * (parameterArray
-				.length - 1)) + 1;
+			let randomNumber = Math.floor(Math.random() * parameterArray.length); 
 			password += parameterArray[randomNumber];
 		}
 
