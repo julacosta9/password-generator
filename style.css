@@ -1,50 +1,60 @@
 body {
-	background: #232323;
-	font-family: 'Public Sans', sans-serif;
+    background: #232323;
+    font-family: "Public Sans", sans-serif;
+}
+
+#toCenterWrapper {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 #wrapper {
-	background: #f5f5f5;
-	border-radius: 10px;
-	margin-top: 30px;
-	/* padding: 20px; */
-	width: 60%;
-	min-width: 300px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #f5f5f5;
+    border-radius: 10px;
+    width: 60%;
+    min-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
 }
 
 #header {
-	font-family: 'Bowlby One SC', sans-serif;
-	background: linear-gradient(90deg, #FC5C7D, #6A82FB);
-	border-radius: 10px 10px 0 0;
-	padding: 20px 0;
-	color: #ffffff
+    font-family: "Bowlby One SC", sans-serif;
+    background: linear-gradient(90deg, #fc5c7d, #6a82fb);
+    border-radius: 10px 10px 0 0;
+    padding: 20px 0;
+    color: #ffffff;
 }
 
 #headerText {
-	font-size: calc(16px + 3vw);
-	letter-spacing: 4px;
+    font-size: calc(16px + 3vw);
+    letter-spacing: 4px;
 }
 
 #generate {
-	background: #6A82FB;
-	color: #ffffff;
+    background: #6a82fb;
+    color: #ffffff;
 }
 
 #generate:hover {
-	background: #637aeb;
+    background: #637aeb;
 }
 
 #passwordContainer {
-	width: 80%;
-	min-width: 280px;
-	border: none;
-	overflow-wrap: break-word;
-	font-family: 'VT323', monospace;
+    width: 80%;
+    min-width: 280px;
+    border: none;
+    overflow-wrap: break-word;
+    font-family: "VT323", monospace;
 }
 
 #password {
-	font-size: calc(16px + 3vw);
+    font-size: calc(16px + 3vw);
 }
 
 /*
@@ -53,41 +63,41 @@ Utilized code from Philipp Rohe - https://codepen.io/BananaCoding/pen/LKLdNJ
 */
 
 .slider {
-	-webkit-appearance: none;
-	width: 50%;
-	min-width: 160px;
-	height: 20px;
-	background: linear-gradient(90deg, #FC5C7D 0%, #6A82FB 5%, #ffffff 5%);
-	outline: none;
-	opacity: 0.7;
-	-webkit-transition: .2s;
-	transition: opacity .2s;
-	border-radius: 12px;
-	box-shadow: 0 1px 10px #868686;
+    -webkit-appearance: none;
+    width: 50%;
+    min-width: 160px;
+    height: 20px;
+    background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 5%, #ffffff 5%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 12px;
+    box-shadow: 0 1px 10px #868686;
 }
 
 .slider:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 40px;
-	height: 40px;
-	background: white;
-	cursor: pointer;
-	border-radius: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .slider::-moz-range-thumb {
-	width: 40px;
-	height: 40px;
-	background: white;
-	cursor: pointer;
-	border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .slider::-moz-focus-outer {
-	border: 0;
+    border: 0;
 }
