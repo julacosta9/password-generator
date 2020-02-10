@@ -1,7 +1,5 @@
 # Password Generator
 
-## Description
-
 An application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS.
 
 Can be found on GitHub Pages: https://julacosta9.github.io/password-generator/
