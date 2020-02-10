@@ -1,18 +1,12 @@
-# password-generator
+# Password Generator
 
 ## Description
 
 An application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS.
 
-## Installation
+Can be found on GitHub Pages: https://julacosta9.github.io/password-generator/
 
-No installation required.
-
-## Usage 
-
-Simply clone the repo and open index.html in your browser.
-
-Can be found on GitHub Pages here: https://julacosta9.github.io/password-generator/
+![Password Generator Screenshot](https://i.imgur.com/anD2IHA.png)
 
 ## Credits
 
