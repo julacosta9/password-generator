@@ -6,7 +6,7 @@ An application that generates a random password based on user-selected criteria.
 
 Can be found on GitHub Pages: https://julacosta9.github.io/password-generator/
 
-![Password Generator Screenshot](https://i.imgur.com/anD2IHA.png)
+![Password Generator Screenshot](https://i.imgur.com/2uKcmIi.png)
 
 ## Credits
 
